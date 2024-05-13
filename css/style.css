@@ -38,7 +38,7 @@ body {
 
 header {
 
-    height: 650px;
+    height: 720px;
     background-color: red;
     background: url(/assets/images/hero_desktop.webp);
     background-repeat: no-repeat;
@@ -50,6 +50,7 @@ header {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    box-sizing: border-box;
 }
 
 .title-bar {
@@ -126,7 +127,7 @@ header {
 
 .header-middle h2 {
     color: white;
-    font-size: 40px;
+    font-size: 50px;
     font-family: "TTNorm";
     text-align: center;
 }
@@ -137,13 +138,13 @@ header {
     flex-direction: row;
     padding-left: 25px;
     padding-right: 8px;
-    padding-top: 8px;
-    padding-bottom: 8px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     border-radius: 100px;
-    width: 400px;
+    width: 420px;
     margin-top: 20px;
     min-width: 300px;
-    max-width: 375px;
+    
 }
 
 .search-add input {
@@ -153,8 +154,14 @@ header {
     width: 100%;
     font-size: 0.7em;
     padding-left: 10px;
-    color: rgb(34, 33, 33);
+    
     font-family: "TTNorm-m";
+}
+
+.search-add input::placeholder {
+    color: rgb(78, 60, 60);
+    font-family: "TTNorm-m";
+    font-size: 16px;
 }
 
 .search-add img {
@@ -328,23 +335,24 @@ header {
 }
 
 .service-img img {
-    width: 154px;
+    width: 155px;
 
 }
 
 
 .service-continer h1 {
-    font-size: 32px;
+    font-size: 34px;
     text-align: center;
     font-weight: 700;
     font-family: "TTNorm";
+    
 }
 
 .service-continer p {
     font-size: 18px;
     text-align: center;
     font-weight: 400;
-    margin-top: 8px;
+    margin-top: 10px;
     font-family: "TTNorm-m";
 
 }
